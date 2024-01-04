@@ -1,0 +1,13 @@
+{
+    "name": "AgencyTemplate",
+    "alias": "agencytemplate",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AgencyTemplate\\Providers\\AgencyTemplateServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,1 @@
+<p>This is the default Declaration for the applicant public profile.</p>

@@ -1,0 +1,13 @@
+{
+    "name": "AgencyFinance",
+    "alias": "agencyfinance",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AgencyFinance\\Providers\\AgencyFinanceServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

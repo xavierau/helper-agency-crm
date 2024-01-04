@@ -1,0 +1,23 @@
+{
+    "name": "anacreation/agencycontractdoc",
+    "description": "",
+    "authors": [
+        {
+            "name": "A & A Creation Company",
+            "email": "info@anacreation.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AgencyContractDoc\\": ""
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "AgencyCore",
+    "alias": "agencycore",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AgencyCore\\Providers\\AgencyCoreServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

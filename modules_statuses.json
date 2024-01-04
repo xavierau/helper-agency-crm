@@ -1,0 +1,13 @@
+{
+    "AgencyCore": true,
+    "AgencyFinance": true,
+    "AgencyTemplate": true,
+    "AgencyContract": true,
+    "AgencyContractDate": true,
+    "AgencyContractDoc": true,
+    "Print": true,
+    "PrintTemplate": true,
+    "Supplier": true,
+    "UploadDocument": true,
+    "CMS": true
+}

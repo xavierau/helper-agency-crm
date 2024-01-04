@@ -1,0 +1,13 @@
+{
+    "name": "AgencyContractDate",
+    "alias": "agencycontractdate",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\AgencyContractDate\\Providers\\AgencyContractDateServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
