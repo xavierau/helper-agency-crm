@@ -22,8 +22,7 @@ use Modules\AgencyCore\Http\Controllers\SearchController;
 Route::group(['middleware' => 'auth:sanctum'],
     function () {
         Route::get('is_login',
-            fn() => response('',
-                204));
+            fn() => response('', 204));
 
         Route::get('/user',
             function (Request $request) {
@@ -33,15 +32,9 @@ Route::group(['middleware' => 'auth:sanctum'],
                 return response()->json(new UserResource($user));
             });
 
-        Route::get('/search',
-            SearchController::class);
+        Route::get('/search', SearchController::class);
 
-        Route::resource('/settings',
-            SettingController::class);
+        Route::resource('/settings', SettingController::class);
 
-        Route::get('/aggregates/applicants/pending_approval',
-            function () {
-                return Applicant::where('is_approved',
-                    false)->count();
-            });
+        Route::get('/aggregates/applicants/pending_approval', fn() => Applicant::where('is_approved', false)->count());
     });
