@@ -12,8 +12,9 @@ class SupplierTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run() {
+    public function run()
+    {
         factory(Supplier::class,
-                15)->create();
+            15)->create();
     }
 }

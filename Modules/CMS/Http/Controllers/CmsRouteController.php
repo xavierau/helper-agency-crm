@@ -8,18 +8,18 @@ use Modules\CMS\Entities\Page;
 
 class CmsRouteController extends Controller
 {
-    public function __invoke(Request $request) {
+    public function __invoke(Request $request)
+    {
 
-        if($page = Page::getPageByPath($request->path())) {
+        if ($page = Page::getPageByPath($request->path())) {
 
             return view($page->view,
-                        compact('page'));
-
+                compact('page'));
         }
 
         return $request->wantsJson() ?
             response('endpoint not found',
-                     404):
+                404) :
             view(404);
 
     }

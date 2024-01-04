@@ -11,21 +11,14 @@
 |
 */
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use Modules\AgencyCore\Entities\Applicant;
-use Modules\CMS\Emails\ApplicantEnquiry;
-use Modules\CMS\Entities\Content;
 use Modules\CMS\Entities\News;
 use Modules\CMS\Entities\Page;
-use Modules\CMS\Http\Controllers\SendApplicantEnquiryController;
 
 Route::get('/setLocale/{locale}', function ($locale) {
-        session(['_locale' => $locale,]);
+    session(['_locale' => $locale,]);
 
-        return redirect()->back();
-    }
-);
+    return redirect()->back();
+});
 
 
 Route::group(['middleware' => 'locale'], function () {
@@ -35,8 +28,8 @@ Route::group(['middleware' => 'locale'], function () {
     Route::get('/applicants_enquiry', fn() => view('contact_us_with_applicant', ['page' => Page::where('url', 'contact_us')->first()]))
         ->name('applicants_enquiry');
 
-    Route::post('/applicants_enquiry', "SendApplicantEnquiryController"
-    )->name('applicants_enquiry');
+    Route::post('/applicants_enquiry', "SendApplicantEnquiryController")
+        ->name('applicants_enquiry');
 
     Route::view('/news', view("news"));
 
@@ -48,7 +41,10 @@ Route::group(['middleware' => 'locale'], function () {
     }
     );
 
-    Route::get('/search_applicants', 'SearchApplicantController')
+    Route::get(
+        '/search_applicants',
+        'SearchApplicantController'
+    )
         ->name('search_applicants');
 
     Route::fallback('CmsRouteController')->middleware('locale');
