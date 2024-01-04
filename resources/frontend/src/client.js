@@ -30,6 +30,7 @@ class client {
     constructor() {
         this.instance = axios.create()
         this.instance.defaults.withCredentials = true
+        this.instance.defaults.headers.contentType = 'application/json'
     }
 
     get(url, config) {
