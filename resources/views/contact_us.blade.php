@@ -243,46 +243,46 @@
                                                 <form method="POST" action="/contact_us">
                                                     @csrf
                                                     <div class="white_box_ribbion">
-                                                        精選推介
+                                                        {{__("Featured")}}
                                                     </div>
                                                     <div class="form_field">
-                                                        <label>姓名</label>
+                                                        <label>{{__("Name")}}</label>
                                                         <input type="text"
                                                                name="name"
                                                                class="form-control"
                                                                placeholder=""/>
                                                     </div>
                                                     <div class="form_field">
-                                                        <label>聯絡電話</label>
+                                                        <label>{{__("Contact Number")}}</label>
                                                         <input type="text"
                                                                name="tel"
                                                                class="form-control"
                                                                placeholder=""/>
                                                     </div>
                                                     <div class="form_field">
-                                                        <label>電郵</label>
+                                                        <label>{{__("Email")}}</label>
                                                         <input type="email"
                                                                name="email"
                                                                class="form-control"
                                                                placeholder=""/>
                                                     </div>
                                                     <div class="form_field">
-                                                        <label>訊息</label>
+                                                        <label>{{__("Message")}}</label>
                                                         <textarea name="message"
                                                                   class="form-control"
                                                                   placeholder=""
                                                                   rows="2"></textarea>
                                                     </div>
                                                     <div class="form_field">
-                                                        <label>婚姻狀況</label>
+                                                        <label>{{__("Martial Status")}}</label>
                                                         <select class="form-control"
                                                                 name="marital_status">
-                                                            <option value=""> - 請選擇 -</option>
+                                                            <option value=""> - {{__("Please Select")}} -</option>
                                                             <option
-                                                                value="single">Single
+                                                                value="single">{{__("Single")}}
                                                             </option>
                                                             <option
-                                                                value="married">Married
+                                                                value="married">{{__("Married")}}
                                                             </option>
                                                         </select>
                                                     </div>

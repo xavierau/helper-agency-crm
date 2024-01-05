@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 p_sm_o">
-                        <div class="owl-carousel" id="banner">
+                        <div class="owl-carousel" id="banner" style="min-height: 80px">
 
                             <div class="item">
                                 @if($link = $page->getContent('banner_1_link', null, app()->getLocale()))

@@ -34,6 +34,6 @@
             </div>
         </div>
     <div class="copyright row">
-        <p> Copyright  &copy; http://www.sia-sincere.com.hk/. All Rights Reserved.</p>
+        <p> Copyright  &copy; http://www.anacreation.com/. All Rights Reserved.</p>
     </div>
 </footer>

@@ -65,14 +65,14 @@
             <div class="col-xs-6">
                 <div class="form-group">
                     <input type="number" min="0" step="1" name="min_weight" class="form-control" id="exampleInputEmail1"
-                           placeholder="Min Weight">
+                           placeholder="{{__("Min Weight")}}">
                 </div>
             </div>
         </div>
         <div class="col-xs-6">
             <div class="form-group">
                 <input type="number" min="0" step="1" name="max_weight" class="form-control"
-                       id="exampleInputEmail1" placeholder="Min Weight">
+                       id="exampleInputEmail1" placeholder="{{__("Max Weight")}}">
 
             </div>
 
@@ -86,14 +86,14 @@
             <div class="col-xs-6">
                 <div class="form-group">
                     <input type="number" min="0" step="1" name="min_height" class="form-control"
-                           id="exampleInputEmail1" placeholder="Min Height">
+                           id="exampleInputEmail1" placeholder="{{__("Min Height")}}">
                 </div>
             </div>
         </div>
         <div class="col-xs-6">
             <div class="form-group">
                 <input type="number" min="0" step="1" name="max_height" class="form-control"
-                       id="exampleInputEmail1" placeholder="Min Height">
+                       id="exampleInputEmail1" placeholder="{{__("Max Height")}}">
             </div>
 
         </div>
