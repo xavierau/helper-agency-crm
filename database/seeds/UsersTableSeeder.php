@@ -23,7 +23,7 @@ class UsersTableSeeder extends Seeder
             ],
             [
                 'name'              => 'Administrator',
-                'email'             => 'admin@sincere.com',
+                'email'             => 'admin@admin.com',
                 'password'          => Hash::make('password'),
                 'email_verified_at' => \Carbon\Carbon::now(),
                 'role'              => 'administrator',
